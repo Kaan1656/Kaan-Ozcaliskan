@@ -1,0 +1,116 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Başlık ve Navigasyon */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Bölüm Başlıkları ve İçerik */
+.section {
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+/* Hakkımda ve CV İçeriği */
+.about-content, .cv-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.about-content div, .cv-content div {
+    width: 45%;
+}
+
+.about-content img, .cv-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* İletişim */
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Alt Bilgi */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+}
+
+/* Cevap Verme ve Duyarlılık */
+@media (max-width: 768px) {
+    .about-content, .cv-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content div, .cv-content div {
+        width: 80%;
+    }
+
+    nav ul {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

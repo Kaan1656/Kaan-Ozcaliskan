@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaan Ozcaliskan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .section {
+            padding: 40px 20px;
+        }
+        .section h2 {
+            text-align: center;
+            color: #333;
+            cursor: pointer;
+        }
+        .section-content {
+            display: none;
+            padding: 20px;
+        }
+        .cv-content, .about-content {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .cv-content div, .about-content div {
+            width: 45%;
+        }
+        .cv-content img, .about-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        function toggleSection(sectionId) {
+            const sectionContent = document.getElementById(sectionId);
+            if (sectionContent.style.display === "none" || sectionContent.style.display === "") {
+                sectionContent.style.display = "block";
+            } else {
+                sectionContent.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Kaan OZCALISKAN</h1>
+   
+</header>
+
+<section id="about" class="section">
+    <h2 onclick="toggleSection('aboutContent')">ABOUT</h2>
+    <div id="aboutContent" class="section-content">
+        <div class="about-content">
+            <div>
+                <p>My name is Kaan ÖZÇALIŞKAN. I am a passionate university student and a dedicated hobbyist in the fields of electronics, robotics, and programming. Currently, I am pursuing my undergraduate studies in Mechatronics Engineering at Erciyes University.
+
+Ever since I was introduced to technology, I have been deeply fascinated by how hardware and software can work together to solve real-world problems. In my free time, I enjoy working on hands-on projects involving microcontrollers, embedded systems, and IoT applications. Whether it’s building custom circuits, writing efficient code, or troubleshooting complex systems, I am always eager to learn and push the boundaries of my knowledge.
+
+I believe that curiosity, consistency, and creativity are the keys to innovation — and I strive to embody these values in every project I take on.</p>
+            </div>
+            <div>
+                <img src="Kaan.png" style="width: 400px; height: 400px;" alt="Profil Fotoğrafı">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="cv" class="section">
+    <h2 onclick="toggleSection('cvContent')">RESUME</h2>
+    <div id="cvContent" class="section-content">
+        <div class="cv-content">
+            <div>
+                <h2>Education</h2>
+
+                <h3>ERCİYES UNIVERSITY</h3>
+                <h3>UNDERGRADUATE</h3>
+                <h3>(2022-2026)</h3>
+                <p>Mechatronics Engineering</p>
+                
+                <h2>Experiences</h2>
+
+                <h3>Robotics</h3>
+                </h3>(Since 2015)</h3>
+                <p>In 2015, I developed myself as much as possible in the fields of electricity and electronics
+, which I started as a hobby. In the field of micro
+processors, software, control systems, I am currently
+actively working on academic subjects and improving myself.</p>
+
+                <h3>Teknofest</h3>
+                </h3>(2024-2025)</h3>
+                <p>In the Teknofest 2024 Model
+Satellite Competition held in 2024, I actively took part in the fields of electronics, control
+systems and communication. In addition to these
+also added experience to me in team management and task planning.</p>
+              
+              
+                <h3>16. MEB Robot Competition Referee</h3>
+                </h3>(2024)</h3>
+                <p>I served as a Referee
+in the Mini Drone category of the 16th International MEB
+Robot Competition held in 2024. In this process, I learned more clearly
+how the process behind
+competitions in which I also competed in this process.</p>
+
+                <h2>Curriculum Vitae</h2>
+                <!-- PDF dosyasını sayfada gömülü olarak açma -->
+                <embed src="Kaan_cv.pdf" width="100%" height="950px" />
+                <!-- Alternatif olarak iframe ile de gösterebilirsiniz -->
+                <!-- <iframe src="cv.pdf" width="100%" height="600px"></iframe> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="contact" class="section">
+    <h2 onclick="toggleSection('contactContent')">CONTACT</h2>
+    <div id="contactContent" class="section-content">
+        <p>You can contact me in the following ways:</p>
+        <ul style="list-style: none; padding-left: 0;">
+            <li>
+                <img src="mail.png" alt="Email Icon" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+                <a href="mailto:k1a6a5n6@gmail.com">k1a6a5n6@gmail.com</a>
+            </li>
+            <li>
+                <img src="insta.png" alt="Instagram Icon" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+                <a href="https://www.instagram.com/_kaan1656" target="_blank">Instagram</a>
+            </li>
+            <li>
+                <img src="linkedin.png" alt="LinkedIn Icon" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+                <a href="https://www.linkedin.com/in/kaan-%C3%B6z%C3%A7al%C4%B1%C5%9Fkan-4916b9259/" target="_blank">LinkedIn</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<footer>
+    <p>&copy; 2025 Kaan OZCALISKAN. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
